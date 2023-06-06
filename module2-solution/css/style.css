@@ -1,0 +1,86 @@
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+
+    text-align: center;
+}
+
+.container {
+    overflow: auto;
+}
+
+.column {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .column {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .column {
+        width: 50%;
+    }
+
+    .column:last-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.column {
+    position: relative;
+
+    float: left;
+
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.content {
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    border: 2px solid #000;
+    background-color: #ffe6cc;
+}
+
+
+.text-box {
+    font-size: 1.2em;
+    font-weight: bold;
+
+    position: absolute;
+    top: -.1em;
+    right: -.1em;
+
+    box-sizing: border-box;
+    width: 25%;
+    padding: 10px;
+
+    text-align: center;
+
+    border: 2px solid #000;
+    background-color: red;
+}
+
+#Chicken {
+    background-color: #ffb6c1;
+}
+
+#Rice {
+    color: white;
+    background-color: #20b2aa;
+}
+
+#Sushi {
+    background-color: #9370db;
+}
